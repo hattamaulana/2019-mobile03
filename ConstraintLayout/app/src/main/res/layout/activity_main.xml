@@ -6,78 +6,19 @@
 	android:layout_height="match_parent"
 	tools:context=".MainActivity">
 
-	<androidx.constraintlayout.widget.ConstraintLayout
+	<Button
 		android:layout_width="0dp"
-		android:layout_height="0dp"
+		android:layout_height="wrap_content"
+		android:text="TOP"
 		app:layout_constraintTop_toTopOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintBottom_toTopOf="@id/center_horizontal_guideline">
+		app:layout_constraintStart_toStartOf="parent" />
 
-		<androidx.constraintlayout.widget.ConstraintLayout
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:background="@android:color/holo_red_dark"
-			app:layout_constraintTop_toTopOf="parent"
-			app:layout_constraintEnd_toEndOf="@id/center_vertical_guideline"
-			app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintBottom_toBottomOf="parent" />
-
-		<androidx.constraintlayout.widget.ConstraintLayout
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:background="@android:color/holo_purple"
-			app:layout_constraintTop_toTopOf="parent"
-			app:layout_constraintStart_toEndOf="@id/center_vertical_guideline"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintBottom_toBottomOf="parent" />
-
-		<androidx.constraintlayout.widget.Guideline
-			android:id="@+id/center_vertical_guideline"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:orientation="vertical"
-			app:layout_constraintGuide_percent=".5" />
-	</androidx.constraintlayout.widget.ConstraintLayout>
-
-	<androidx.constraintlayout.widget.Guideline
-		android:id="@+id/center_horizontal_guideline"
-		android:layout_width="match_parent"
-		android:layout_height="match_parent"
-		android:orientation="horizontal"
-		app:layout_constraintGuide_percent=".5" />
-
-	<androidx.constraintlayout.widget.ConstraintLayout
+	<Button
 		android:layout_width="0dp"
-		android:layout_height="0dp"
+		android:layout_height="wrap_content"
+		android:text="BOTTOM"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintTop_toBottomOf="@id/center_horizontal_guideline">
-
-		<androidx.constraintlayout.widget.ConstraintLayout
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:background="@android:color/holo_purple"
-			app:layout_constraintTop_toTopOf="parent"
-			app:layout_constraintEnd_toEndOf="@id/vertical_guideline"
-			app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintBottom_toBottomOf="parent" />
-
-		<androidx.constraintlayout.widget.ConstraintLayout
-			android:layout_width="0dp"
-			android:layout_height="0dp"
-			android:background="@android:color/holo_red_light"
-			app:layout_constraintTop_toTopOf="parent"
-			app:layout_constraintStart_toEndOf="@id/vertical_guideline"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintBottom_toBottomOf="parent" />
-
-		<androidx.constraintlayout.widget.Guideline
-			android:id="@+id/vertical_guideline"
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:orientation="vertical"
-			app:layout_constraintGuide_percent=".7" />
-	</androidx.constraintlayout.widget.ConstraintLayout>
+		app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
