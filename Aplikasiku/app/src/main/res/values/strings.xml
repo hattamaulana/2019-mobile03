@@ -16,4 +16,5 @@
 	<string name="confirm_password">Confirm Password</string>
 	<string name="send_request">Send Request</string>
 	<string name="change_password">Change Password</string>
+	<string name="reset_password_subtitle">Reset code was sent to your email. Please enter the code and create new password.</string>
 </resources>
