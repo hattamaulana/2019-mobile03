@@ -11,21 +11,20 @@ class App extends StatelessWidget {
         appBar: AppBar(
           title: Text("Layouting on Flutter"),
         ),
-        body: Row(
+        body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             Expanded(
               flex: 10,
               child: Container(
-                height: 100,
                 decoration: BoxDecoration(color: Colors.grey),
-                child: Column(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: <Widget>[
                     Container(
-                      height: 400,
-                      decoration: BoxDecoration(color: Colors.white),
+                      width: 150,
+                      decoration: BoxDecoration(color: Colors.red),
                     )
                   ],
                 ),
@@ -34,13 +33,12 @@ class App extends StatelessWidget {
             Expanded(
               flex: 10,
               child: Container(
-                height: 100,
                 decoration: BoxDecoration(color: Colors.grey),
-                child: Column(
+                child: Row(
                   children: <Widget>[
                     Container(
-                      height: 400,
-                      decoration: BoxDecoration(color: Colors.red),
+                      width: 300,
+                      decoration: BoxDecoration(color: Colors.white),
                     )
                   ],
                 ),
